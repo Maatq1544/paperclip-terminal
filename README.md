@@ -238,3 +238,11 @@ pnpm paperclipai run
 ---
 
 *Published by the Paperclip Community*
+
+---
+
+## Скачать
+
+**GitHub:** https://github.com/Maatq1544/paperclip-terminal
+
+**Прямая ссылка на релиз:** https://github.com/Maatq1544/paperclip-terminal/releases
