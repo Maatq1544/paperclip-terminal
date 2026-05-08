@@ -19,7 +19,7 @@
 
 ## Ecosystem
 
-> **Part of [Hermes Agent Ecosystem](https://github.com/Maatq1544/hermes-ecosystem)** — organized collection of Hermes integrations, memory stack, and automation tools.
+> **Part of [Hermes Agent Ecosystem](https://github.com/Maatq1544/)** — organized collection of Hermes integrations, memory stack, and automation tools.
 
 ---
 
