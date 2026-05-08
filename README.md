@@ -19,7 +19,7 @@
 
 ## Ecosystem
 
-> **Part of [Hermes Agent Ecosystem](https://github.com/Maatq1544/)** — organized collection of Hermes integrations, memory stack, and automation tools.
+> **Part of [](https://github.com//)** — organized collection of Hermes integrations, memory stack, and automation tools.
 
 ---
 
@@ -109,21 +109,21 @@ pwd
 psql -h localhost -p 5433 -U paperclip -d paperclip -c "
 INSERT INTO plugins (id, plugin_key, package_name, package_path, version, api_version, manifest_json, status, installed_at, updated_at)
 VALUES (
-  gen_random_uuid(),
-  'paperclip-terminal',
-  '@paperclipai/plugin-terminal',
-  '\$PAPERCLIP_ROOT/packages/plugins/paperclip-terminal',
-  '1.0.0',
-  1,
-  \$(cat packages/plugins/paperclip-terminal/dist/manifest.json)::jsonb,
-  'ready',
-  NOW(),
-  NOW()
+ gen_random_uuid(),
+ 'paperclip-terminal',
+ '@paperclipai/plugin-terminal',
+ '\$PAPERCLIP_ROOT/packages/plugins/paperclip-terminal',
+ '1.0.0',
+ 1,
+ \$(cat packages/plugins/paperclip-terminal/dist/manifest.json)::jsonb,
+ 'ready',
+ NOW(),
+ NOW()
 )
 ON CONFLICT (plugin_key) DO UPDATE SET
-  status = 'ready',
-  manifest_json = EXCLUDED.manifest_json,
-  updated_at = NOW();
+ status = 'ready',
+ manifest_json = EXCLUDED.manifest_json,
+ updated_at = NOW();
 "
 ```
 
@@ -135,12 +135,12 @@ Replace `$PAPERCLIP_ROOT` with the actual path to your Paperclip installation.
 
 ```
 paperclip-terminal/
-├── dist/               — Compiled output (after pnpm build)
-│   ├── manifest.js     — Plugin metadata
-│   ├── worker.js       — PTY management, shell execution
-│   └── ui/index.js    — Terminal UI component
-├── src/                — TypeScript source
-├── scripts/            — Build and setup scripts
+├── dist/        — Compiled output (after pnpm build)
+│  ├── manifest.js   — Plugin metadata
+│  ├── worker.js    — PTY management, shell execution
+│  └── ui/index.js  — Terminal UI component
+├── src/        — TypeScript source
+├── scripts/      — Build and setup scripts
 ├── package.json
 └── README.md
 ```
@@ -153,8 +153,8 @@ paperclip-terminal/
 
 ```typescript
 const result = await ctx.tools.execute("terminal-exec", {
-  command: "ls -la",       // shell command
-  timeoutSec: 60,          // timeout (default: 60)
+ command: "ls -la",    // shell command
+ timeoutSec: 60,     // timeout (default: 60)
 });
 // result.content — stdout/stderr
 // result.error — error (if any)
@@ -165,34 +165,34 @@ const result = await ctx.tools.execute("terminal-exec", {
 ```typescript
 // Create a session
 const { sessionId } = await ctx.tools.execute("terminal-session", {
-  action: "create",
-  cwd: "/home/user",       // working directory
+ action: "create",
+ cwd: "/home/user",    // working directory
 });
 
 // Write to session
 await ctx.tools.execute("terminal-session", {
-  action: "write",
-  sessionId,
-  input: "ls\n",
+ action: "write",
+ sessionId,
+ input: "ls\n",
 });
 
 // Resize terminal
 await ctx.tools.execute("terminal-session", {
-  action: "resize",
-  sessionId,
-  cols: 120,
-  rows: 40,
+ action: "resize",
+ sessionId,
+ cols: 120,
+ rows: 40,
 });
 
 // Close session
 await ctx.tools.execute("terminal-session", {
-  action: "close",
-  sessionId,
+ action: "close",
+ sessionId,
 });
 
 // List active sessions
 const { sessions } = await ctx.tools.execute("terminal-session", {
-  action: "list",
+ action: "list",
 });
 ```
 
@@ -221,9 +221,9 @@ In project settings (instance config):
 
 ```json
 {
-  "defaultShell": "/bin/bash",
-  "sessionTimeoutSec": 3600,
-  "maxConcurrentSessions": 5
+ "defaultShell": "/bin/bash",
+ "sessionTimeoutSec": 3600,
+ "maxConcurrentSessions": 5
 }
 ```
 
@@ -249,7 +249,7 @@ In project settings (instance config):
 **Plugin doesn't appear after install:**
 ```bash
 psql -h localhost -p 5433 -U paperclip -d paperclip -c \
-  "SELECT plugin_key, status FROM plugins;"
+ "SELECT plugin_key, status FROM plugins;"
 # Should show: paperclip-terminal | ready
 ```
 
@@ -274,8 +274,8 @@ pnpm paperclipai run
 
 **⭐ Star this repo** — it helps Paperclip users discover the terminal plugin!
 
-[GitHub](https://github.com/Maatq1544/paperclip-terminal) • [Releases](https://github.com/Maatq1544/paperclip-terminal/releases)
+[GitHub](https://github.com//paperclip-terminal) • [Releases](https://github.com//paperclip-terminal/releases)
 
-*Published by the Paperclip Community. Built by [Ivan Kurilov](https://github.com/Maatq1544).*
+*Published by the Paperclip Community. Built by [Ivan Kurilov](https://github.com/).*
 
 </div>
