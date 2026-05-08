@@ -17,10 +17,6 @@
 
 ---
 
-## Ecosystem
-
-> **Part of [](https://github.com//)** — organized collection of Hermes integrations, memory stack, and automation tools.
-
 ---
 
 ## What Is This?
@@ -273,8 +269,6 @@ pnpm paperclipai run
 <div align="center">
 
 **⭐ Star this repo** — it helps Paperclip users discover the terminal plugin!
-
-[GitHub](https://github.com//paperclip-terminal) • [Releases](https://github.com//paperclip-terminal/releases)
 
 *Published by the Paperclip Community. Built by [Ivan Kurilov](https://github.com/).*
 
