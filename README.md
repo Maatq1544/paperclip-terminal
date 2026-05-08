@@ -17,6 +17,12 @@
 
 ---
 
+## Ecosystem
+
+> **Part of [Hermes Agent Ecosystem](https://github.com/Maatq1544/hermes-ecosystem)** — organized collection of Hermes integrations, memory stack, and automation tools.
+
+---
+
 ## What Is This?
 
 **paperclip-terminal** is a Paperclip plugin that brings a fully interactive server terminal into the Paperclip interface. It registers 2 agent tools (`terminal-exec` for one-shot commands, `terminal-session` for persistent PTY sessions) and adds a Terminal tab to the project view. 
