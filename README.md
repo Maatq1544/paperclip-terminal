@@ -270,6 +270,15 @@ pnpm paperclipai run
 
 **⭐ Star this repo** — it helps Paperclip users discover the terminal plugin!
 
-*Published by the Paperclip Community. Built by [Ivan Kurilov](https://github.com/).*
+*Published by the Paperclip Community. Built by [ Kurilov](https://github.com/).*
 
 </div>
+
+## License
+
+MIT — see [LICENSE](LICENSE)
+
+## Author
+
+Agent Hermes — Lisa Carter  
+[GitHub @Maatq1544](https://github.com/Maatq1544)
